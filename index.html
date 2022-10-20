@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--I modified a template from W3 Schools for this hand-in. Source: https://www.w3schools.com/w3css/tryw3css_templates_interior_design.htm#packages-->
+<head>
+  <title>The Ratty Drink Kiosk</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+    body {font-size:16px;}
+    .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+    .w3-half img:hover{opacity:1}
+  </style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;color: white; background-color: #591C0B" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Personas<br>and Storyboarding</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#interface" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Interface</a>
+    <a href="#observations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Observations</a>
+    <a href="#interview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Interview Questions</a>
+    <a href="#personas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Personas</a>
+    <a href="#storyboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Storyboard</a>
+    <a href="#conclusion" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Conclusion</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>The Ratty Drink Kiosk</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>The Ratty Drink Kiosk</b>
+    </h1>
+    <h1 class="w3-xlarge" style="color: #932432"><b>I observed real users interacting with a public interface at Brown University, The Beloved and Infamous Ratty Drink Kiosk, to create UX personas and storyboards. My objective was to determine if it is a usable and efficient interface.</b></h1>
+    <hr style="width:50px;border:5px solid #932432" class="w3-round">
+    <div class="w3-center">
+      <img src="assets/kiosk.png" style="width:20%" onclick="onClick(this)" alt="kiosk">
+    </div>
+  </div>
+
+  <!-- INTERFACE -->
+  <div class="w3-container" id="interface" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: #932432"><b>The Interface.</b></h1>
+    <hr style="width:50px;border:5px solid #932432" class="w3-round">
+    <p>The Ratty Drink Kiosk is a beverage dispenser that allows users to select a myriad of drink options with the convenience of one centralized source.  As seen to the right, at the initial screen, users can select their drink of choice by clicking on a bubble icon. The user will then be directed to a second screen where, if applicable, they can customize the flavor of their drink. For instance, a user can select Minute Maid Lemonades and then will be directed to a second screen where they can choose strawberry flavoring to create strawberry lemonade.</p>
+    <p> The user can also return to the initial screen using the back button on the top left corner. In the unfortunate– and quite frequent– case that the kiosk runs out of a specific beverage, the corresponding bubble with the grayed-out indicates its unavailability. Below the terminal, the physical ice and drink dispenser lever can be pushed back by users to fill their cup with their desired ratios. There is an additional contact-free option available where users can scan the QR Code on the top left of the home screen and select the same options from their phone.</p>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="assets/Screen%20Shot%202022-10-04%20at%201.18.28%20PM.png" style="width:100%">
+    </div>
+    <div class="w3-half">
+    <img src="assets/Page5.jpg" style="width:100%">
+    </div>
+  </div>
+
+  <!-- OBSERVATIONS -->
+  <div class="w3-container" id="observations" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: #932432"><b>User Observations.</b></h1>
+    <hr style="width:50px;border:5px solid #932432" class="w3-round">
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-xlarge w3-padding-32" style="background-color: #B73225;color: white">User A</li>
+        <li class="w3-padding-16">Had a plate of Ratty pizza in one hand and an empty cup in another.</li>
+        <li class="w3-padding-16">Immediately clicked the Coca-Cola bubble icon and proceeded to select the Cherry Vanilla syrup flavor.</li>
+        <li class="w3-padding-16">Did not dispense any ice.</li>
+        <li class="w3-padding-16">Took a sip of beverage before walking back to their table</li>
+        <li class="w3-padding-16">Took around 7 seconds in total to use kiosk.</li>
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-xlarge w3-padding-32" style="background-color: #B73225;color: white">User B</li>
+        <li class="w3-padding-16">Placed a bagel wrapped in a napkin on the counter while using the kiosk.</li>
+        <li class="w3-padding-16">Looking at phone while waiting in line.</li>
+        <li class="w3-padding-16">After the preceding person had finished using the machine, they quickly went up to the terminal and selected the water bubble.</li>
+        <li class="w3-padding-16">Did not hesitate while using interface.</li>
+        <li class="w3-padding-16">Did not browse any other beverage options.</li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-xlarge w3-padding-32" style="background-color: #B73225;color: white">User C</li>
+        <li class="w3-padding-16">Carrying a Ratty to-go box as well as their backpack.</li>
+        <li class="w3-padding-16">Used the kiosk to fill up a reusable water bottle.</li>
+        <li class="w3-padding-16">Had an additional to-go cup that they filled with Sprite.</li>
+        <li class="w3-padding-16">They took one to two minutes to figure out what drink they wanted. Selected Coca-Cola and then Minute Maid.</li>
+        <li class="w3-padding-16">The dining hall was not as crowded during this time so user C took their time to figure out what beverage to pour.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- INTERVIEW -->
+  <div class="w3-container" id="interview" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: #932432"><b>Interview Questions and Responses.</b></h1>
+    <hr style="width:50px;border:5px solid #932432" class="w3-round">
+    <div class="w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class=" w3-xlarge w3-padding-32" style="background-color: #B73225;color: white">Key Questions</li>
+        <li class="w3-padding-16">Initially, how clear was the purpose of the Ratty Drink Kiosk for you?</li>
+        <li class="w3-padding-16">How often do you use the Ratty Drink Kiosk?</li>
+        <li class="w3-padding-16">Was it easy to get your desired drink? Did your initial desired drink change after you interacted with the interface?</li>
+        <li class="w3-padding-16">Did you face any challenges while using the kiosk?</li>
+        <li class="w3-padding-16">What could be changed about the interface to improve your experience? Would you organize the drink options or interactive components any differently?</li>
+        <li class="w3-padding-16">How often do you opt for this kiosk over the regular Ratty juice/water dispenser?</li>
+      </ul>
+    </div>
+    <div class="w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class=" w3-large w3-padding-32" style="background-color: #B73225;color: white">Response Summary</li>
+        <li class="w3-padding-16">Users utilize the kiosk every time they eat at the Ratty dining hall and want to grab some sort of beverage whether that just be water or a specific soda. Users almost always choose this drink kiosk over the regular water/juice dispenser</li>
+        <li class="w3-padding-16">After observing a plethora of users, I noticed that it generally took two to five clicks before the user filled their cup with a drink– some users knew exactly what they wanted before going to the kiosk and others browsed the options more indecisively.</li>
+        <li class="w3-padding-16">All interviewed users noted that it was relatively easy to use the kiosk. Many stated that the bubble icons made it fun and simple to use. One user stated that it was “satisfying” to look at and “convenient” since it pours beverages quickly. Another user pointed out that it was a “good configuration” but would never opt for the top bubble icons for rootbeer since those icon colors were less vibrant.</li>
+        <li class="w3-padding-16">For users who get the same drink each time at the Ratty, the main challenge was that occasionally their go-to beverage was out of stock and they had to choose an alternative. Or worse, their desired syrup flavor was low on stock, so they still get their go-to drink because it is technically available but it is watered down and tastes much worse. These users thought it would be helpful to have an indicator when a beverage is low stock in addition to completely our of order.</li>
+        <li class="w3-padding-16">Another challenge that all users noted was that there was no notification system for when the kiosk is out of ice. Users have to wait a few seconds while pushing the ice lever before realizing that there was no available ice. This frustrated users because it added to the time it took to grab their beverage.</li>
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- PERSONAS -->
+  <div class="w3-container" id="personas" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: #932432"><b>Personas.</b></h1>
+    <hr style="width:50px;border:5px solid #932432" class="w3-round">
+    <p>Below are two archetypal characters representing the observed users.</p>
+  </div>
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div>
+      <img src="assets/Ratty%20Drink%20Kiosk%20(1).png" style="width:100%" onclick="onClick(this)" alt="Persona1">
+    </div>
+
+    <div>
+      <img src="assets/linnea.png" style="width:100%" onclick="onClick(this)" alt="Persona2">
+    </div>
+  </div>
+
+
+
+  <!-- STORYBOARD -->
+  <div class="w3-container" id="storyboard" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: #932432"><b>Storyboard.</b></h1>
+    <hr style="width:50px;border:5px solid #932432" class="w3-round">
+    <p>The storyboard portrays Linnea, The Adventurer, and her entire user journey with The Ratty Drink Kiosk.</p>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="assets/frame-0001.jpg" alt="frame1" style="width:100%">
+        <div class="w3-container w3-small">
+          <p>Linnea has a few minutes left before she has to walk to lecture and she needs to get a beverage for the rest of the day. She grabs a Ratty to-go cup and heads over to the drink kiosk.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="assets/frame-0009.jpg" alt="frame2" style="width:100%">
+        <div class="w3-container w3-small">
+          <p>She doesn't know what she wants yet but decides to click the water bubble icon.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="assets/frame-0010.jpg" alt="frame3" style="width:100%">
+        <div class="w3-container w3-small">
+          <p>But...Linnea wants to try something new today. After all, she's off meal plan next semester so she wants to take advantage of all the options. She presses the back button to return to the home screen.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="assets/frame-0002.jpg" alt="frame4" style="width:100%">
+        <div class="w3-container w3-small">
+          <p>Linnea clicks the caffeine free filter because she already had coffee this morning and doesn't want to mess up her sleep schedule.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="assets/frame-0003.jpg" alt="frame5" style="width:100%">
+        <div class="w3-container w3-small">
+          <p>Linnea is conflicted! She can't decide what she wants to drink...juice, soda, water? The options are endless. On top of that, there are a few people waiting behind her so she feels pressured to make a decision quickly.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="assets/frame-0004.jpg" alt="frame6" style="width:100%">
+        <div class="w3-container w3-small">
+          <p>Linnea decides to get something she's never had before.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="assets/frame-0005.jpg" alt="frame7" style="width:100%">
+        <div class="w3-container w3-small">
+          <p>Minute Maid.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="assets/frame-0006.jpg" alt="frame8" style="width:100%">
+        <div class="w3-container w3-small">
+          <p>Orange. Lemonade.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="assets/frame-0007.jpg" alt="frame9" style="width:100%">
+        <div class="w3-container w3-small">
+          <p>Linnea is satisfied with her choice. She grabs her backpack, leaves the Ratty, and starts speed walking to her lecture hall.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONCLUSION -->
+  <div class="w3-container" id="conclusion" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: #932432"><b>Conclusion.</b></h1>
+    <hr style="width:50px;border:5px solid #932432" class="w3-round">
+    <p>The Ratty Drink Kiosk machine is generally quite user-friendly and intuitive according to the observed users at the Ratty dining hall. Individuals were satisfied with the design and enjoyed using a centralized beverage machine.
+    Some improvements that could be made to the interface include the following: an indicator for low syrup, an indicator for no ice, a quicker auto-reset to the home screen,
+    and better accessibility features. If I were to observe more users in the future, I plan on going to a more public space with a similar kiosk so that
+    the selected observations are not solely based off of students at Brown University.</p>
+  </div>
+
+  <!-- End page content -->
+</div>
+
+<script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+</script>
+
+
+
+</body>
+</html>
