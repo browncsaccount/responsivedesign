@@ -2,7 +2,7 @@
 <html lang="en">
 <!--I modified a template from W3 Schools for this hand-in. Source: https://www.w3schools.com/w3css/tryw3css_templates_interior_design.htm#packages-->
 <head>
-  <title>The Ratty Drink Kiosk</title>
+  <title>Responsive Design</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -17,17 +17,17 @@
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;color: white; background-color: #591C0B" id="mySidebar"><br>
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;color: white; background-color: #807691" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Personas<br>and Storyboarding</b></h3>
+    <h3 class="w3-padding-64"><b>Responsive <br>Redesign</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#interface" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Interface</a>
-    <a href="#observations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Observations</a>
-    <a href="#interview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Interview Questions</a>
-    <a href="#personas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Personas</a>
-    <a href="#storyboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Storyboard</a>
+    <a href="#interface" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Usability Problems</a>
+    <a href="#observations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Low-Fidelity Wireframing</a>
+    <a href="#interview" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Visual Design Style Guide</a>
+    <a href="#personas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">High-Fidelity Prototyping</a>
+    <a href="#storyboard" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Responsive Redesign</a>
     <a href="#conclusion" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Conclusion</a>
   </div>
 </nav>
@@ -35,7 +35,7 @@
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>The Ratty Drink Kiosk</span>
+  <span>Responsive Redesign</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -46,97 +46,92 @@
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>The Ratty Drink Kiosk</b>
+    <h1 class="w3-xxlarge"><b>Redesign of the Sacramento <br>Film Festival Website</b>
     </h1>
-    <h1 class="w3-xlarge" style="color: #932432"><b>I observed real users interacting with a public interface at Brown University, The Beloved and Infamous Ratty Drink Kiosk, to create UX personas and storyboards. My objective was to determine if it is a usable and efficient interface.</b></h1>
-    <hr style="width:50px;border:5px solid #932432" class="w3-round">
+    <h1 class="w3-large" style="color: black"><b>I chose a simple website to redesign-- making improvements in the usability, learnability, and memorability. My objective was to practice the workflow of redesigning a simple website by creating low-fidelity and high-fidelity prototypes for different screen sizes. </b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
     <div class="w3-center">
-      <img src="assets/kiosk.png" style="width:20%" onclick="onClick(this)" alt="kiosk">
+      <img src="https://www.armediastudio.com/sites/default/files/cinegraph-hdr.gif" style="width:30%" onclick="onClick(this)" alt="original website">
+    </div>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+    <p>Each year, my hometown puts on a film festival to showcase the art of our local filmmaking community. In high school, my friends and I visited the website for the Sacramento International Film Festival. We found it extremely confusing to navigate, thus, deterring us from wanting to attend or appreciate such a meaningful event. Considerable effort and time are put into hosting local film festivals, so for this reason, I chose to redesign this website. A user-friendly website is essential to encouraging both attendance and recognition for all the independent artists involved in the event. The original website can be found <b><a href="https://www.sacramentofilmfestival.com/" target="_blank">here.</a></b>
+    </p>
+    <div class="w3-center">
+      <img src="https://i.postimg.cc/dVh51wM0/Screen-Shot-2022-10-20-at-3-09-29-PM.png" style="width:70%" onclick="onClick(this)" alt="original website">
     </div>
   </div>
 
   <!-- INTERFACE -->
   <div class="w3-container" id="interface" style="margin-top:75px">
-    <h1 class="w3-xxxlarge" style="color: #932432"><b>The Interface.</b></h1>
-    <hr style="width:50px;border:5px solid #932432" class="w3-round">
-    <p>The Ratty Drink Kiosk is a beverage dispenser that allows users to select a myriad of drink options with the convenience of one centralized source.  As seen to the right, at the initial screen, users can select their drink of choice by clicking on a bubble icon. The user will then be directed to a second screen where, if applicable, they can customize the flavor of their drink. For instance, a user can select Minute Maid Lemonades and then will be directed to a second screen where they can choose strawberry flavoring to create strawberry lemonade.</p>
-    <p> The user can also return to the initial screen using the back button on the top left corner. In the unfortunate– and quite frequent– case that the kiosk runs out of a specific beverage, the corresponding bubble with the grayed-out indicates its unavailability. Below the terminal, the physical ice and drink dispenser lever can be pushed back by users to fill their cup with their desired ratios. There is an additional contact-free option available where users can scan the QR Code on the top left of the home screen and select the same options from their phone.</p>
+    <h1 class="w3-xxxlarge" style="color: black"><b>Usability Problems.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
   </div>
   <div class="w3-row-padding">
+  <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul w3-light-grey w3-center">
+      <li class=" w3-xlarge w3-padding-32" style="background-color: black;color: white">Usability</li>
+      <li class="w3-padding-16">Cluttered Layout— The many different type sizes, type weights, typefaces, and colors on the webpage causes visual pollution. Thus, discouraging users from wanting to continue navigating the page. If these elements were used more intentionally, they could be more effective in portraying important information to users.</li>
+      <li class="w3-padding-16">Confusing navigation– There is a navigation at the top of the page below the header. At the same time, there seems to be another navigation section with links to submit a film, news, social media links, and upcoming shows. These could be combined to make it easier for visitors to know where to click next.</li>
+      <li class="w3-padding-16">The main reasons a user would visit this site is to submit a film, attend the festival, or learn more about the festival. However, the current design makes it inconvenient for users to complete these wants. It would be helpful to make it easy and obvious how the user can achieve these goals.</li>
+    </ul>
+  </div>
+  <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul w3-light-grey w3-center">
+      <li class=" w3-large w3-padding-32" style="background-color: black;color: white">Efficiency</li>
+      <li class="w3-padding-16">Absence of visual hierarchy– The minimal use of whitespace makes it difficult for users to grasp basic information about the film festival. It is hard to discern the sections of the page which causes visitors to spend more time deciding what they should click or look at next. By altering the size and grouping of page elements, users can be naturally guided to the most crucial components. This adds to the time users take to find what they need from the website.</li>
+    </ul>
+  </div>
+    <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul w3-light-grey w3-center">
+      <li class=" w3-large w3-padding-32" style="background-color: black;color: white">Learnability</li>
+      <li class="w3-padding-16">Unclear UI– The image carousel captures the attention of users at first glance. It is unclear how to interact with this carousel until the user plays around with it. The carousel does not automatically transition between cards, so for the next image or previous image card to show up, users must click the desired image. It is also unclear that clicking on the center image card opens a link to a new tab, which could be frustrating for users when they are redirected unwillingly.</li>
+    </ul>
+  </div>
     <div class="w3-half">
-      <img src="assets/Screen%20Shot%202022-10-04%20at%201.18.28%20PM.png" style="width:100%">
-    </div>
-    <div class="w3-half">
-    <img src="assets/Page5.jpg" style="width:100%">
-    </div>
+    <ul class="w3-ul w3-light-grey w3-center">
+      <li class=" w3-large w3-padding-32" style="background-color: black;color: white">Memorability</li>
+      <li class="w3-padding-16">Even though the layout is confusing, the site does not have severe memorability issues because there are only a few components overall.</li>
+      <li class="w3-padding-16"> After users navigate through the page for a few minutes, it would be relatively easy to remember which UI components perform certain functions.</li>
+    </ul>
+  </div>
+    <div class="w3-half w3-margin-bottom">
+    <ul class="w3-ul w3-light-grey w3-center">
+      <li class=" w3-large w3-padding-32" style="background-color: black;color: white">Conceptual Model</li>
+      <li class="w3-padding-16">Inconsistency– There is no consistency in the UI design. For instance, because the buttons are not uniform it makes it harder for the user to know which elements are clickable. The UI components don’t behave in the same way so the user does not feel a sense of familiarity or control with how to interact with the page.</li>
+      <li class="w3-padding-16">It does not seem like a lot of the design choices were intentional. It would be helpful if the site had a comprehensive mapping of subpages or nested elements.</li>
+    </ul>
+  </div>
+  </div>
+
+  <div class="w3-container" style="margin-top:75px">
+    <h1 class="w3-xxxlarge" style="color: black"><b>Accessibility.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+    <p></p>
   </div>
 
   <!-- OBSERVATIONS -->
   <div class="w3-container" id="observations" style="margin-top:75px">
-    <h1 class="w3-xxxlarge" style="color: #932432"><b>User Observations.</b></h1>
-    <hr style="width:50px;border:5px solid #932432" class="w3-round">
+    <h1 class="w3-xxxlarge" style="color: black"><b>Low Fidelity Wireframing.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
   </div>
-  <div class="w3-row-padding">
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-xlarge w3-padding-32" style="background-color: #B73225;color: white">User A</li>
-        <li class="w3-padding-16">Had a plate of Ratty pizza in one hand and an empty cup in another.</li>
-        <li class="w3-padding-16">Immediately clicked the Coca-Cola bubble icon and proceeded to select the Cherry Vanilla syrup flavor.</li>
-        <li class="w3-padding-16">Did not dispense any ice.</li>
-        <li class="w3-padding-16">Took a sip of beverage before walking back to their table</li>
-        <li class="w3-padding-16">Took around 7 seconds in total to use kiosk.</li>
-      </ul>
-    </div>
-
-    <div class="w3-third">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-xlarge w3-padding-32" style="background-color: #B73225;color: white">User B</li>
-        <li class="w3-padding-16">Placed a bagel wrapped in a napkin on the counter while using the kiosk.</li>
-        <li class="w3-padding-16">Looking at phone while waiting in line.</li>
-        <li class="w3-padding-16">After the preceding person had finished using the machine, they quickly went up to the terminal and selected the water bubble.</li>
-        <li class="w3-padding-16">Did not hesitate while using interface.</li>
-        <li class="w3-padding-16">Did not browse any other beverage options.</li>
-      </ul>
-    </div>
-
-    <div class="w3-third w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-xlarge w3-padding-32" style="background-color: #B73225;color: white">User C</li>
-        <li class="w3-padding-16">Carrying a Ratty to-go box as well as their backpack.</li>
-        <li class="w3-padding-16">Used the kiosk to fill up a reusable water bottle.</li>
-        <li class="w3-padding-16">Had an additional to-go cup that they filled with Sprite.</li>
-        <li class="w3-padding-16">They took one to two minutes to figure out what drink they wanted. Selected Coca-Cola and then Minute Maid.</li>
-        <li class="w3-padding-16">The dining hall was not as crowded during this time so user C took their time to figure out what beverage to pour.</li>
-      </ul>
-    </div>
-  </div>
+  <h3 style="font-weight: bolder">Desktop</h3>
+  <img src="assets/LargeDesktop.png" style="width:100%">
+  <h3 style="font-weight: bolder">Tablet</h3>
+  <img src="assets/Tablet.png" style="width:100%">
+  <h3 style="font-weight: bolder">Phone</h3>
+  <img src="assets/Phone.png" style="width:100%">
 
   <!-- INTERVIEW -->
   <div class="w3-container" id="interview" style="margin-top:75px">
-    <h1 class="w3-xxxlarge" style="color: #932432"><b>Interview Questions and Responses.</b></h1>
-    <hr style="width:50px;border:5px solid #932432" class="w3-round">
-    <div class="w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class=" w3-xlarge w3-padding-32" style="background-color: #B73225;color: white">Key Questions</li>
-        <li class="w3-padding-16">Initially, how clear was the purpose of the Ratty Drink Kiosk for you?</li>
-        <li class="w3-padding-16">How often do you use the Ratty Drink Kiosk?</li>
-        <li class="w3-padding-16">Was it easy to get your desired drink? Did your initial desired drink change after you interacted with the interface?</li>
-        <li class="w3-padding-16">Did you face any challenges while using the kiosk?</li>
-        <li class="w3-padding-16">What could be changed about the interface to improve your experience? Would you organize the drink options or interactive components any differently?</li>
-        <li class="w3-padding-16">How often do you opt for this kiosk over the regular Ratty juice/water dispenser?</li>
-      </ul>
-    </div>
-    <div class="w3-margin-bottom">
-      <ul class="w3-ul w3-light-grey w3-center">
-        <li class=" w3-large w3-padding-32" style="background-color: #B73225;color: white">Response Summary</li>
-        <li class="w3-padding-16">Users utilize the kiosk every time they eat at the Ratty dining hall and want to grab some sort of beverage whether that just be water or a specific soda. Users almost always choose this drink kiosk over the regular water/juice dispenser</li>
-        <li class="w3-padding-16">After observing a plethora of users, I noticed that it generally took two to five clicks before the user filled their cup with a drink– some users knew exactly what they wanted before going to the kiosk and others browsed the options more indecisively.</li>
-        <li class="w3-padding-16">All interviewed users noted that it was relatively easy to use the kiosk. Many stated that the bubble icons made it fun and simple to use. One user stated that it was “satisfying” to look at and “convenient” since it pours beverages quickly. Another user pointed out that it was a “good configuration” but would never opt for the top bubble icons for rootbeer since those icon colors were less vibrant.</li>
-        <li class="w3-padding-16">For users who get the same drink each time at the Ratty, the main challenge was that occasionally their go-to beverage was out of stock and they had to choose an alternative. Or worse, their desired syrup flavor was low on stock, so they still get their go-to drink because it is technically available but it is watered down and tastes much worse. These users thought it would be helpful to have an indicator when a beverage is low stock in addition to completely our of order.</li>
-        <li class="w3-padding-16">Another challenge that all users noted was that there was no notification system for when the kiosk is out of ice. Users have to wait a few seconds while pushing the ice lever before realizing that there was no available ice. This frustrated users because it added to the time it took to grab their beverage.</li>
-
-      </ul>
-    </div>
+    <h1 class="w3-xxxlarge" style="color: black"><b>High-fidelity Prototype.</b></h1>
+    <hr style="width:50px;border:5px solid #807691" class="w3-round">
+    <p>*Hover and scroll over the screen or open the Figma link to interact with the prototype*</p>
+    <h3 style="font-weight: bolder">Desktop</h3>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwTxRdLXgIiEoVFKoH1tu6z%2FSacramento-Film-Festival%3Fnode-id%3D1%253A2%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2" allowfullscreen></iframe>
+    <h3 style="ont-weight: bolder">Tablet</h3>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwTxRdLXgIiEoVFKoH1tu6z%2FSacramento-Film-Festival%3Fnode-id%3D38%253A339%26scaling%3Dscale-down%26page-id%3D31%253A167" allowfullscreen></iframe>
+    <h3 style="font-weight: bolder">Phone</h3>
+    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FwTxRdLXgIiEoVFKoH1tu6z%2FSacramento-Film-Festival%3Fnode-id%3D31%253A166%26scaling%3Dscale-down%26page-id%3D31%253A108" allowfullscreen></iframe>
   </div>
 
   <!-- PERSONAS -->
@@ -155,7 +150,6 @@
       <img src="assets/linnea.png" style="width:100%" onclick="onClick(this)" alt="Persona2">
     </div>
   </div>
-
 
 
   <!-- STORYBOARD -->
@@ -273,7 +267,50 @@
   }
 </script>
 
+<div class="w3-row-padding">
+  <div class="w3-half">
+    <img src="assets/Screen%20Shot%202022-10-04%20at%201.18.28%20PM.png" style="width:100%">
+  </div>
+  <div class="w3-half">
+    <img src="assets/Page5.jpg" style="width:100%">
+  </div>
+</div>
 
+<div class="w3-row-padding">
+  <div class="w3-third w3-margin-bottom">
+    <ul class="w3-ul w3-light-grey w3-center">
+      <li class="w3-xlarge w3-padding-32" style="background-color: #B73225;color: white">User A</li>
+      <li class="w3-padding-16">Had a plate of Ratty pizza in one hand and an empty cup in another.</li>
+      <li class="w3-padding-16">Immediately clicked the Coca-Cola bubble icon and proceeded to select the Cherry Vanilla syrup flavor.</li>
+      <li class="w3-padding-16">Did not dispense any ice.</li>
+      <li class="w3-padding-16">Took a sip of beverage before walking back to their table</li>
+      <li class="w3-padding-16">Took around 7 seconds in total to use kiosk.</li>
+    </ul>
+  </div>
 
+  <div class="w3-third">
+    <ul class="w3-ul w3-light-grey w3-center">
+      <li class="w3-xlarge w3-padding-32" style="background-color: #B73225;color: white">User B</li>
+      <li class="w3-padding-16">Placed a bagel wrapped in a napkin on the counter while using the kiosk.</li>
+      <li class="w3-padding-16">Looking at phone while waiting in line.</li>
+      <li class="w3-padding-16">After the preceding person had finished using the machine, they quickly went up to the terminal and selected the water bubble.</li>
+      <li class="w3-padding-16">Did not hesitate while using interface.</li>
+      <li class="w3-padding-16">Did not browse any other beverage options.</li>
+    </ul>
+  </div>
+
+  <div class="w3-third w3-margin-bottom">
+    <ul class="w3-ul w3-light-grey w3-center">
+      <li class="w3-xlarge w3-padding-32" style="background-color: #B73225;color: white">User C</li>
+      <li class="w3-padding-16">Carrying a Ratty to-go box as well as their backpack.</li>
+      <li class="w3-padding-16">Used the kiosk to fill up a reusable water bottle.</li>
+      <li class="w3-padding-16">Had an additional to-go cup that they filled with Sprite.</li>
+      <li class="w3-padding-16">They took one to two minutes to figure out what drink they wanted. Selected Coca-Cola and then Minute Maid.</li>
+      <li class="w3-padding-16">The dining hall was not as crowded during this time so user C took their time to figure out what beverage to pour.</li>
+    </ul>
+  </div>
+</div>
 </body>
+
+
 </html>
